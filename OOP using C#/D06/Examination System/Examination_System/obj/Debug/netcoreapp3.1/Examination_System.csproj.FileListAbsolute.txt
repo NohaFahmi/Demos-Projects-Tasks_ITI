@@ -1,0 +1,13 @@
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\bin\Debug\netcoreapp3.1\Examination_System.exe
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\bin\Debug\netcoreapp3.1\Examination_System.deps.json
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\bin\Debug\netcoreapp3.1\Examination_System.runtimeconfig.json
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\bin\Debug\netcoreapp3.1\Examination_System.runtimeconfig.dev.json
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\bin\Debug\netcoreapp3.1\Examination_System.dll
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\bin\Debug\netcoreapp3.1\Examination_System.pdb
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\obj\Debug\netcoreapp3.1\Examination_System.csprojAssemblyReference.cache
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\obj\Debug\netcoreapp3.1\Examination_System.AssemblyInfoInputs.cache
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\obj\Debug\netcoreapp3.1\Examination_System.AssemblyInfo.cs
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\obj\Debug\netcoreapp3.1\Examination_System.csproj.CoreCompileInputs.cache
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\obj\Debug\netcoreapp3.1\Examination_System.dll
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\obj\Debug\netcoreapp3.1\Examination_System.pdb
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D06\Examination System\Examination_System\obj\Debug\netcoreapp3.1\Examination_System.genruntimeconfig.cache
