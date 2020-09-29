@@ -1,0 +1,26 @@
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\bin\Debug\netcoreapp3.1\D01.exe
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\bin\Debug\netcoreapp3.1\D01.deps.json
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\bin\Debug\netcoreapp3.1\D01.runtimeconfig.json
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\bin\Debug\netcoreapp3.1\D01.runtimeconfig.dev.json
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\bin\Debug\netcoreapp3.1\D01.dll
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\bin\Debug\netcoreapp3.1\D01.pdb
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\obj\Debug\netcoreapp3.1\D01.csprojAssemblyReference.cache
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\obj\Debug\netcoreapp3.1\D01.csproj.CoreCompileInputs.cache
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\obj\Debug\netcoreapp3.1\D01.AssemblyInfoInputs.cache
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\obj\Debug\netcoreapp3.1\D01.AssemblyInfo.cs
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\obj\Debug\netcoreapp3.1\D01.dll
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\obj\Debug\netcoreapp3.1\D01.pdb
+D:\3-Month2020\ismailia\C#\Day1\D01\D01\obj\Debug\netcoreapp3.1\D01.genruntimeconfig.cache
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\bin\Debug\netcoreapp3.1\D01.exe
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\bin\Debug\netcoreapp3.1\D01.deps.json
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\bin\Debug\netcoreapp3.1\D01.runtimeconfig.json
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\bin\Debug\netcoreapp3.1\D01.runtimeconfig.dev.json
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\bin\Debug\netcoreapp3.1\D01.dll
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\bin\Debug\netcoreapp3.1\D01.pdb
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\obj\Debug\netcoreapp3.1\D01.csprojAssemblyReference.cache
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\obj\Debug\netcoreapp3.1\D01.AssemblyInfoInputs.cache
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\obj\Debug\netcoreapp3.1\D01.AssemblyInfo.cs
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\obj\Debug\netcoreapp3.1\D01.csproj.CoreCompileInputs.cache
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\obj\Debug\netcoreapp3.1\D01.dll
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\obj\Debug\netcoreapp3.1\D01.pdb
+F:\Noha\ITI-Frontend&Cross-Platform\OOP concepts using C#\D01\D01\obj\Debug\netcoreapp3.1\D01.genruntimeconfig.cache
