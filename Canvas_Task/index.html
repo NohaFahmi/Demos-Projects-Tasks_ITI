@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Canvas Task</title>
+    </head>
+    <body>
+
+        <input type="color" id="clr" name="color" />
+        <button type="button" id="btn">Draw Circles</button>
+        <canvas>
+            Your Browser Doesn't Support Canvas!
+        </canvas>
+        
+        <script>
+            
+            var clrInput = document.getElementById('clr');
+            var btn = document.getElementById('btn');
+            var canvas = document.querySelector('canvas');
+            
+            var ctx = canvas.getContext("2d");
+            //set the width and height of canvas to full window
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            btn.onclick = function() {
+
+                //clear the pervious canvas drawing
+                ctx.clearRect(0,0,canvas.width,canvas.height);
+                
+                for(var i=0; i<100; i++) {
+                    //get random x value
+                    var x = Math.random() * canvas.width;
+                    
+                    //get random y value
+                    var y = Math.random() * canvas.height;
+                    //get random rad of circles
+                    var radius = Math.random() * 50;
+
+                    ctx.beginPath();
+
+                    ctx.arc(x, y, radius, 0, 2 * Math.PI);
+                    //Change color of circle with input value
+                    ctx.strokeStyle = clrInput.value;
+
+                    ctx.stroke();
+                } 
+            }
+        </script>
+    </body>
+</html>

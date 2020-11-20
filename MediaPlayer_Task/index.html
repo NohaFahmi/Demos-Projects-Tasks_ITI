@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Player</title>
+        <link href="./styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        
+        <section id="container">
+            
+
+            <table class="player-container">
+                <tr>
+                    <td class='artist'>
+                        <img class="arts-img" src='./images/1.jpg' alt='artist-image' />
+                    </td>
+                    <td class="controls">
+                        <input type="range" id="audio-progress" value="0"/>
+
+                        <button type="button" class="play-btn btn">Play</button>
+                        <button type="button" class="pause-btn btn">Pause</button>
+                        <button type="button" class="stop-btn btn">Stop</button>
+                        
+                        <button id='mute' class='btn' type="button">Mute</button>
+                        <input type="range" id="volume" min="0" max="1" step="0.1" value="0"/>
+                    </td>
+                </tr>
+                
+            </table>
+            <div class="audios-container">
+
+                <p id='1' class='songName playing'>SET BIRD FREE- SIA</p>
+                <p  id='2' class='songName '>PERHAPS - DORIS DAY</p>
+                <p id='3' class='songName'>IT HAD TO BE YOU - HARRY CONNICK Jr.</p>
+                <p id='4' class='songName'>UNFORGETTABLE - SIA</p>
+
+            </div>
+            <div class="playing-audio">
+
+                <audio class='current' id="song" controls>
+                    <source id='song_src' src="./audios/1.mp3">    
+                </audio>
+
+            </div>
+
+        </section>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
