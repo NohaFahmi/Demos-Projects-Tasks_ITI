@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Main Page</title>
+        <style>
+            /* 1. select p elements and make them red */
+            p {
+                color: red;
+            }
+            /* 2.select p and div elements  */
+            p, div {
+                color: grey;
+            }
+            /* 3.select p with class mainClass direct child for div with id myDiv and make it styled  */
+
+            #myDiv>.mainClass {
+                border: 2px solid lightgray;
+                padding: 5px;
+                font-weight: 700;
+                color: lightseagreen;
+                font-size: 18px;
+            
+            }
+
+            /*4.select all p inside div and style them   */
+
+            div p {
+                color: darkcyan;
+                /* font-weight: 500; */
+                font-style: italic;
+                border: 2px dotted lightgray;
+            }
+            /* 5. select input with type text element with class myClass */
+            
+            .myClass[type='text'] {
+                background-color: whitesmoke;
+                box-shadow: 2px 2px 2px grey;
+                border-radius: 4px;
+                font-size: 16px;
+                height: 40px;
+                width: 350px;
+            }
+
+            /* 6. select span elements after div  */
+            div~span{
+               color: darkblue;
+               font-weight: 700;
+               border: 2px solid lightgray;
+               padding: 5px;
+               display: block;
+               width: 200px;
+               margin: 40 auto;
+            }
+            /* 7.  select p directly after div*/
+            div+p {
+                border: 3px solid lightgrey;
+                width: 300px;
+                padding: 10px;
+                margin: 40px;
+                text-align: center;
+
+            }
+        </style>
+       
+    </head>
+    <body>
+        <!-- bgcolor="#white" -->
+        <div id='top'>
+            <h1><u>Header 1</u></h1>
+            <h2>Header 2</h2>
+            <h3>Header 3</h3>
+        </div>
+
+        <br />
+        <hr />
+        <span class="sapn-2">This is Span 2</span>
+        <div>
+            <strong>
+                <u>Content</u>
+            </strong>
+
+            <p>List of Courses:</p>
+            <ul type='square'>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>
+                    React
+                    <ol type="i">
+                        <li>React-Redux</li>
+                        <li>React-Native</li>
+
+                    </ol>
+                </li>
+                <li>JavaScript</li>
+                <li>Nodejs</li>
+
+
+            </ul>
+
+        </div>
+        <br />
+        <hr />
+
+        <div id='myDiv'>
+            <p class="mainClass">There are many text formatting can be added like: </p>
+            <ol>
+                <li><strong>blod</strong></li>
+                <li><u>underlined</u></li>
+                <li><big>Different Fonts</big></li>
+                <li><small>different sizes</small></li>
+                <li><font color='#5D6D7E' >Colored Word</font></li>
+            </ol>
+        </div>
+        
+        <hr />
+        
+        <div>
+            <label for='yourName'>Your Name</label>
+            <input type="text" id="yourName" name='Name' class="myClass" />
+           
+            <label for='yourAge'>Your Age</label>
+            <input type="number" id="yourAge" name='Age' class="myClass" />
+        </div>
+            <p>
+                non quis excepteur eiusmod minim elit eiusmod non dolore eu.
+                non quis excepteur eiusmod minim elit eiusmod non dolore eu.
+                non quis excepteur eiusmod minim elit eiusmod non dolore eu.
+            </p>
+            <span class="span-1">This is Span 1</span>
+            
+            
+        <div align='right'>
+            <a href='./page3.html'>
+                <img 
+                    width="150"
+                    alt='next-btn'
+                    src="https://i.pinimg.com/originals/a7/df/56/a7df56bd45fa03724f0261cc04133ad6.gif"
+                />
+            </a>
+        </div>
+    
+        <a href='#top'>
+            <img src='https://media3.giphy.com/media/f5eXt6rRipXcZ3t03v/giphy.gif' alt='up-arrow-gif' width='200'/>
+        </a>
+        
+    </body>
+</html>
