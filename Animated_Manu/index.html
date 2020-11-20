@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* height: 100%; */
+        }
+        
+        .menu {
+            width: 300px;
+            height: 100vh;
+            background-color: darkcyan;
+            color: white;
+            padding: 15px;
+            margin-left: -220px;
+            
+        }
+        ul {
+            
+            list-style-type: none;
+            height: 30px;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        h4 {
+            background-color: white;
+            color: teal;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* .hide {
+            margin-left: -220px;
+        } */
+    </style>
+</head>
+<body>
+
+   <div class="menu">
+       <section class="sec">
+           <h4>Item 1</h4>
+           <ul>
+               <li>Hello</li>
+           </ul>
+       </section>
+
+       <section class="sec">
+            <h4>Item 2</h4>
+
+            <ul>
+                <li>Bye Bye</li>
+            </ul>
+        </section>
+   </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

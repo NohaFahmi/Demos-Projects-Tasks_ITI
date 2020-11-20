@@ -1,0 +1,15 @@
+.arrows {
+    .fas {
+        font-size: 24px;
+        margin-left: 10px; 
+        cursor: pointer;
+    }
+
+    .active {
+        color: $darker-blue;
+    }
+
+    .disabled {
+        color: $lighter-blue;
+    }
+}

@@ -1,0 +1,21 @@
+.section {
+    background-color: $white-color;
+    padding: 20px;
+    .main-title {
+        color: $black-color;
+        font-size: 30px;
+        padding: 5px 0 0 0;
+    }
+    .sub-title {
+        color: $grey-color;
+        font-size: 20px;
+    }
+}
+
+.cards__container {
+    margin: 20px 0;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
