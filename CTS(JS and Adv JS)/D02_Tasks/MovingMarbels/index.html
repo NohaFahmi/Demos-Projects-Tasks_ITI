@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Marbels</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <img src="./images/marble1.jpg" alt='marbel' onmouseover="stop()" onmouseout="loopOnMarbels()"/>
+        <img src="./images/marble1.jpg" alt='marbel' onmouseover="stop()" onmouseout="loopOnMarbels()"/>
+        <img src="./images/marble1.jpg" alt='marbel' onmouseover="stop()" onmouseout="loopOnMarbels()"/>
+        <img src="./images/marble1.jpg" alt='marbel' onmouseover="stop()" onmouseout="loopOnMarbels()"/>
+        <img src="./images/marble1.jpg" alt='marbel' onmouseover="stop()" onmouseout="loopOnMarbels()"/>
+
+
+    </div>
+    <script>
+        var images = document.querySelectorAll('img');
+        var currentIndex =0;
+        var looping;
+        loopOnMarbels();
+        function loopOnMarbels() {
+
+            
+            currentIndex++;
+            if(currentIndex > images.length-1) {
+                currentIndex = 0;
+                    
+            }
+            images[currentIndex].src = './images/marble2.jpg';
+            for(var i=currentIndex; i<images.length-1; i++) {
+                images[i+1].src = './images/marble1.jpg';
+
+            }
+            for(var i=currentIndex; i>0; i--) {
+                images[i-1].src = './images/marble1.jpg';
+
+            }
+            looping = setTimeout(loopOnMarbels, 500);
+        }
+        
+        function stop() {
+            clearTimeout(looping);
+        }
+
+        
+
+        
+    </script>    
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .images {
+                   margin-top: 10%;
+                   margin-left: 35%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="images">
+           
+            <img height="50"  src="./images/marble1.jpg" onmouseout="marble()" onmouseover="stop()" width="50"  />
+            <img height="50"  src="./images/marble1.jpg" onmouseout="marble()" onmouseover="stop()" width="50"  />
+            <img height="50"  src="./images/marble1.jpg" onmouseout="marble()" onmouseover="stop()" width="50" />
+            <img height="50"  src="./images/marble1.jpg" onmouseout="marble()" onmouseover="stop()" width="50" />
+            <img height="50"  src="./images/marble1.jpg" onmouseout="marble()" onmouseover="stop()" width="50" />
+        </div>
+     <script>
+            var timeId;
+            var Img = document.querySelectorAll('img');
+            var currImg =0;
+            marble();
+           
+            function marble(){
+                   currImg++;
+                   if (currImg > Img.length-1){
+                       currImg=0;
+                   }
+
+                   Img[currImg].src = './images/marble2.jpg';
+                   for (var i=currImg; i<Img.length-1;i++){
+                       Img[i+1].src = './images/marble1.jpg';
+                   }
+                   for(var i=currImg; i>0; i--) {
+                 Img[i-1].src = './images/marble1.jpg';
+
+             }
+
+                   timeId =setTimeout(marble, 500);
+            }
+
+        function stop(){
+            clearTimeout(timeId);
+        }
+           
+     </script>
+    </body>
+</html>

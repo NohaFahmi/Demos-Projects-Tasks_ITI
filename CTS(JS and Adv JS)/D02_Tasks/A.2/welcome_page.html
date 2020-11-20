@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome Page</title>
+    </head>
+    <body>
+        <div id="container"></div>
+
+        <script>
+
+            var userData = location.search;
+            console.log(userData);
+            
+            function displayData() {
+
+                
+                var newData = userData.split('&');
+                //["?fullName=Noha+Mohammed", "email=nm1488%40fayoum.edu.eg", "password=", "title=Engineer", "mobile=201009569032", "gender=female", "address=Egypt"]
+                
+                var info;
+                var infoArr = [];
+                // for(var i=0; i<newData.length; i++) {
+                //     info =  newData[i].substr(newData[i].indexOf("=") +1, newData[i].length-1);
+                //     infoArr.push(info);
+
+                // }
+
+                var fullName = newData[0].replace('?', '').substr(newData[0].indexOf('='), newData[0].length-1).replace('+', ' ');
+
+                var title= newData[3].substr(newData[3].indexOf('=')+1, newData[3].length-1);
+                
+                var email = newData[1].substr(0, newData[1].indexOf('=')-1);
+                var mobile= newData[4];
+                var address= newData[5];
+                var gender= newData[6];
+
+                var container = document.getElementById('container');
+                //creating h1
+                var greeting = document.createElement("h1");
+                greeting.appendChild(document.createTextNode("Welcome, " + title + " " + fullName));
+                container.appendChild(greeting);
+                
+                greeting.style.color = "maroon";
+
+                var dataContainer = document.createElement('div');
+
+                dataContainer.appendChild(document.createElement('br'));
+                    dataContainer.appendChild(document.createElement('br'));
+                   
+                
+                container.appendChild(dataContainer);
+
+                dataContainer.style.padding = '10px';
+                dataContainer.style.textAlign = 'left';
+                dataContainer.style.fontSize = "20px";
+                dataContainer.style.color = "green";
+                dataContainer.style.fontWeight = 'bolder';
+
+                dataContainer.appendChild(
+                        document.createElement('p').appendChild(
+                        document.createTextNode('Your ' + email + " is: " + newData[1].substr(newData[1].indexOf('=')+1, newData[1].length-1).replace("%", "@"))
+                    )
+                );
+
+                dataContainer.appendChild(document.createElement('br'));
+                dataContainer.appendChild(document.createElement('br'));
+
+                var p;
+                //creating data elements
+                for(var i=4; i<7; i++) {
+                    var label= newData[i].substr(0,newData[i].indexOf('='));
+                    var data= newData[i].substr(newData[i].indexOf('=')+1, newData[i].length-1);
+                    
+                     p = document.createElement('p');
+                    
+                    dataContainer.appendChild(
+                            p.appendChild(
+                            document.createTextNode('Your ' + label + " is: " + data)
+                        )
+                    );
+                    dataContainer.appendChild(document.createElement('br'));
+                    dataContainer.appendChild(document.createElement('br'));
+                   
+                }
+
+            }
+
+            displayData();
+        </script>
+        
+    </body>
+
+    
+</html>

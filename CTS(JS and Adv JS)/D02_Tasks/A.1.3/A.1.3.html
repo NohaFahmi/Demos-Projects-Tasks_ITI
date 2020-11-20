@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>A.1.3 Task</title>
+    </head>
+    <body>
+        <a  href="javascript:showMsg();">Open new AD Window</a>
+        <!-- <button onclick="showMsg()">Open</button> -->
+    </body>
+
+    <script>
+
+
+        function showMsg() {
+            
+            var newWindow = open("newWindow.html", "","width=400, height=600");
+            
+            newWindow.focus();
+
+            setInterval(function() {
+                newWindow.scrollBy(0, 200);
+            }, 100);
+
+        }
+
+        
+    </script>
+</html>

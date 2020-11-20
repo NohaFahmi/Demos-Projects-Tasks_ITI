@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>A.1.2 Task</title>
+    </head>
+    <body>
+        <button onclick="showMsg()">Open</button>
+        <!-- <p class="msg"></p> -->
+    </body>
+
+    <script>
+
+        var newWindow;
+
+        function showMsg() {
+            
+            newWindow = open("newWindow.html", "","width=200, height=200");
+            
+            newWindow.focus();
+           
+        } 
+    </script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Pics</title>
+</head>
+<body>
+    <div id="container">
+        <img src="./images/icon1.gif" />
+        <img src="./images/TOP.JPG" />
+        <img src="./images/icon2.gif" />
+    </div>
+    <button type="button" onclick="stop()">Stop</button>
+    <button type="button" onclick="reset()">Reset</button>
+    <p id='icon1'></p>
+    <p id='icon2'></p>
+
+
+    <script>
+        var container = document.getElementById('container');
+        container.style.borderStyle = 'solid';
+        container.style.width = '400px';
+        container.style.height = '400px';
+        container.style.position = 'relative';
+        container.style.borderColor = 'red';
+        // container.style.textAlign = 'center';
+        container.style.margin = '0 0 20px 0';
+
+        var images = document.querySelectorAll('img');
+        for(var i=0; i<images.length; i++) {
+            images[i].style.position = 'absolute';
+        }
+        var looping = true;
+        var repeated;
+        var px = 0;
+        // var pxRight = 0;
+        // var pxLeft = 0;
+        // var pxBottom = 0;
+
+        images[0].style.left = px + 'px';//150
+        images[2].style.right =  px + 'px';//150
+        images[0].style.top = '150px';//350px
+        images[2].style.top = '150px';
+        images[1].style.left = '180px';
+        images[1].style.bottom = px + 'px'; //370px
+
+        go();
+        function go() {
+
+            if(!looping && (px === 0)) {
+                looping = true;
+            } 
+            if(looping && (px < 350)) {
+
+                px+=20;
+                images[0].style.left = px + 'px';
+                images[2].style.right =  px + 'px';
+                images[1].style.bottom = px + 'px'; 
+
+            } 
+            else {
+                looping = false;
+                px-=20;
+                images[0].style.left = px + 'px';
+                images[2].style.right =  px + 'px';
+                images[1].style.bottom = px + 'px'; 
+            }
+        
+            document.getElementById('icon1').innerText = '<img src="./images/icon1.gif" style="left: ' + px + 'px;" />';
+            document.getElementById('icon2').innerText = '<img src="./images/icon2.gif" style="right: ' + px + 'px;" />';
+            repeated = setTimeout(go, 200);
+            
+        }
+        
+
+        function stop() {
+            clearTimeout(repeated);
+        }
+
+        function reset() {
+            stop();
+            px=0;
+            
+            images[0].style.left = px + 'px';
+            images[2].style.right =  px + 'px';
+            images[1].style.bottom = px + 'px';
+            document.getElementById('icon1').innerText = '<img src="./images/icon1.gif" style="left: ' + px + 'px;" />';
+            document.getElementById('icon2').innerText = '<img src="./images/icon2.gif" style="right: ' + px + 'px;" />';
+        }
+
+    </script>
+</body>
+</html>
